@@ -35,6 +35,7 @@ function gradeQuiz(candidateAnswers) {
     1) ${questions[0]}
     Your Answer: ${candidateAnswers[0]}
     Correct Answer: ${correctAnswers[0]}
+
     2) ${questions[1]}
     Your Answer: ${candidateAnswers[1]}
     Correct Answer: ${correctAnswers[1]}
@@ -62,6 +63,7 @@ function gradeQuiz(candidateAnswers) {
   });
 
   grade = (grade/questions.length)*100;
+  console.log(`Overall Grade: ${grade}%`);
   if(grade >= 80){
     console.log("You have passed.");
   }
